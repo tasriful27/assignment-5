@@ -6,16 +6,13 @@
     <title>Emergency Conduct</title>
       <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
   <!-- font awesome link  -->
-   <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  <!-- daisyUI & tailwind link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                    <!-- daisyUI cdn  -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+                <!-- Tailwindcss cdn -->
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
       <header class="md:max-w-[1920px] md:h-[100px] mx-auto p-6">
@@ -45,213 +42,231 @@
     <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col justify-center items-center max-w-[1920px] md:h-[239px] h-[400px] text-center mx-auto">
       <img class='w-[92px] h-[92px]'src="assets/logo-dark.png" alt="govt logo">
       <h1 class="text-[40px] font-bold text-white">Emergency Service Directory</h1>
-      <p class="text-[20px] font-semibold text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+      <p class="text-[20px] font-semibold text-white">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
     </div>
   </section>
 
    <!-- cart section  -->
-   <section class="bg-[#DFEFFF] md:w-[1850px] md:h-[1140px] mx-auto flex flex-col md:flex-row md:px-8 w-[415px] ">
+   <section class="bg-[#DFEFFF] md:w-[1500px] md:h-[1040px] mx-auto flex flex-col md:flex-row md:px-8 w-[400px] ">
     <!-- left side cart  -->
-     <div class="grid md:grid-cols-3 md:grid-rows-3 grid-cols-1 md:w-[1370px] gap-2">
-      <div class="national emergency md:w-[417px] h-[360px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
+     <div class="grid md:grid-cols-3 md:grid-rows-3 grid-cols-1 md:w-[1370px] gap-1">
+      <div class="national emergency md:w-[340px] h-[310px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
         <div class="flex justify-between items-center ">
-          <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
+          <div class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
           <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency logo">
         </div>
-        <img id="heart-picture-1" class='w-[24px] h-[24px] mr-[20px]'src="heart.png" alt="">
+        <img id="heart-picture-1" class='w-[24px] h-[24px] mr-[15px]' src="assets/heart.png" alt="">
         </div>
-        <h1 id='emergency-service-name'class="text-[24px] font-bold mt-[15px]">National Emergency Number</h1>
-        <p   class="text-[18px] text-gray-500">National Emergency</p>
-        <h4 id="emergency-service-number" class="text-[26px] font-bold mt-[15px]"> 999</h4>
+        <h1 id='emergency-service-name'class="text-[18px] font-bold mt-[15px]">National Emergency Number</h1>
+        <p class="text-[18px] text-gray-500">National Emergency</p>
+        <h4 id="emergency-service-number" class="text-[15px] font-bold mt-[15px]"> 999</h4>
         <p class="text-[18px] text-gray-500 bg-gray-200 rounded-full w-[50px] h-[30px] text-center mt-[15px]">All</p>
         <div class="flex gap-3 mt-[20px]">
-          <button id="copy-btn-NE" class=" copy-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
-             <img class='w-[14px] h-[14px] mt-[8px]'src="copy icon.png" alt="copy icon">
+          <button id="copy-btn-NE" class=" copy-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
+             <img class='w-[14px] h-[14px] mt-[8px]' src="assets/copy icon.png" alt="copy icon">
             <p class="text-[18px] text-gray-500">copy</p>
           </button>
-          <button  id='call-btn-national-emergency'class="call-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700">
-            <img class="w-[14px] h-[16px] mt-[6px]" src="call icon.png" alt="">
+          <button  id='call-btn-national-emergency'class="call-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700 hover:bg-red-700">
+            <img class="w-[14px] h-[16px] mt-[6px]" src="assets/call icon.png" alt="">
             <p class="text-white">Call</p>
           </button>
         </div>
       </div>
-      <div class="police hepline w-[417px] h-[360px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
+      <div class="police hepline w-[340px] h-[310px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
         <div class="flex justify-between items-center ">
-          <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
+          <div class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
           <img class="w-[32px] h-[32px]" src="assets/police.png" alt="police">
         </div>
-        <img id='heart-picture-2'class='w-[24px] h-[24px] mr-[20px]'src="heart.png" alt="">
+        <img id='heart-picture-2'class='w-[24px] h-[24px] mr-[20px]' src="assets/heart.png" alt="">
         </div>
-        <h1 id='police-helpline-name'class="text-[24px] font-bold mt-[15px]">Police Helpline Number</h1>
+        <h1 id='police-helpline-name'class="text-[18px] font-bold mt-[15px]">Police Helpline Number</h1>
         <p class="text-[18px] text-gray-500">Police</p>
-        <h4 id='police-helpline-number' class="text-[26px] font-bold mt-[15px]">999</h4>
+        <h4 id='police-helpline-number' class="text-[18px] font-bold mt-[15px]">999</h4>
         <p class=" w-[70px] h-[30px] text-[18px] text-gray-500 bg-gray-200 rounded-full text-center mt-[15px]">police</p>
         <div class="flex gap-3 mt-[20px]">
-          <button id="copy-btn-PH" class="copy-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
-             <img class='w-[14px] h-[14px] mt-[8px]'src="copy icon.png" alt="copy icon">
+          <button id="copy-btn-PH" class="copy-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
+             <img class='w-[14px] h-[14px] mt-[8px]'src="assets/copy icon.png" alt="copy icon">
             <p class="text-[18px] text-gray-500">copy</p>
           </button>
-          <button id='call-btn-police-helpline' class="call-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700">
-            <img class="w-[14px] h-[16px] mt-[6px]" src="call icon.png" alt="">
+          <button id='call-btn-police-helpline' class="call-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700 hover:bg-red-700">
+            <img class="w-[14px] h-[16px] mt-[6px]" src="assets/call icon.png" alt="">
             <p  class="text-white">Call</p>
           </button>
         </div>
       </div>
-      <div class="fire service number w-[417px] h-[360px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
+      <div class="fire service number w-[340px] h-[310px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
         <div class="flex justify-between items-center ">
-          <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
+          <div class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
           <img class="w-[32px] h-[32px]" src="assets/fire-service.png" alt="fire service logo">
         </div>
-        <img id='heart-picture-3' class='w-[24px] h-[24px] mr-[20px]'src="heart.png" alt="">
+        <img id='heart-picture-3' class='w-[24px] h-[24px] mr-[20px]' src="assets/heart.png" alt="">
         </div>
-        <h1 id='fire-service-name' class="text-[24px] font-bold mt-[15px]">Fire Service Number</h1>
+        <h1 id='fire-service-name' class="text-[18px] font-bold mt-[15px]">Fire Service Number</h1>
         <p class="text-[18px] text-gray-500">Fire Service</p>
-        <h4 id='fire-service-number'class="text-[26px] font-bold mt-[15px]">999</h4>
+        <h4 id='fire-service-number'class="text-[18px] font-bold mt-[15px]">999</h4>
         <p class="text-[18px] text-gray-500 bg-gray-200 rounded-full w-[60px] h-[30px] text-center mt-[15px]">Fire</p>
         <div class="flex gap-3 mt-[20px]">
-          <button id="copy-btn-FS" class="copy-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
-             <img class='w-[14px] h-[14px] mt-[8px]'src="copy icon.png" alt="copy icon">
+          <button id="copy-btn-FS" class="copy-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
+             <img class='w-[14px] h-[14px] mt-[8px]' src="assets/copy icon.png" alt="copy icon">
             <p class="text-[18px] text-gray-500">copy</p>
           </button>
-          <button id="call-btn-fire-service" class="call-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700">
-            <img class="w-[14px] h-[16px] mt-[6px]" src="call icon.png" alt="">
+          <button id="call-btn-fire-service" class="call-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700 hover:bg-red-700">
+            <img class="w-[14px] h-[16px] mt-[6px]" src="assets/call icon.png" alt="">
             <p class="text-white">Call</p>
           </button>
         </div>
       </div>
-      <div class="ambunlace service w-[417px] h-[360px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
+      <div class="ambunlace service w-[340px] h-[310px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
         <div class="flex justify-between items-center ">
-          <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
+          <div class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
           <img class="w-[32px] h-[32px]" src="assets/ambulance.png" alt="emergency logo">
         </div>
-        <img id='heart-picture-4' class='w-[24px] h-[24px] mr-[20px]'src="heart.png" alt="">
+        <img id='heart-picture-4' class='w-[24px] h-[24px] mr-[20px]' src="assets/heart.png" alt="">
         </div>
-        <h1 id='ambulance-service-name'class="text-[24px] font-bold mt-[15px]">Ambulance Number</h1>
+        <h1 id='ambulance-service-name'class="text-[18px] font-bold mt-[15px]">Ambulance Number</h1>
         <p class="text-[18px] text-gray-500">Ambulance</p>
-        <h4 id='ambulance-service-number' class="text-[26px] font-bold mt-[15px]">1994-999999</h4>
+        <h4 id='ambulance-service-number' class="text-[18px] font-bold mt-[15px]">1994-999999</h4>
         <p class="text-[18px] text-gray-500 bg-gray-200 rounded-full w-[80px] h-[30px] text-center mt-[15px]">Health</p>
         <div class="flex gap-3 mt-[20px]">
-          <button id="copy-btn-AS" class="copy-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
-             <img class='w-[14px] h-[14px] mt-[8px]'src="copy icon.png" alt="copy icon">
+          <button id="copy-btn-AS" class="copy-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
+             <img class='w-[14px] h-[14px] mt-[8px]' src="assets/copy icon.png" alt="copy icon">
             <p class="text-[18px] text-gray-500">copy</p>
           </button>
-          <button id="call-btn-ambulance" class="call-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700">
-            <img class="w-[14px] h-[16px] mt-[6px]" src="call icon.png" alt="">
+          <button id="call-btn-ambulance" class="call-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700 hover:bg-red-700">
+            <img class="w-[14px] h-[16px] mt-[6px]" src="assets/call icon.png" alt="">
             <p class="text-white">Call</p>
           </button>
         </div>
       </div>
-      <div class="woman & children w-[417px] h-[360px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
+      <div class="woman & children w-[340px] h-[310px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
         <div class="flex justify-between items-center ">
-          <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
+          <div class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
           <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency logo">
         </div>
-        <img id='heart-picture-5'class='w-[24px] h-[24px] mr-[20px]'src="heart.png" alt="">
+        <img id='heart-picture-5'class='w-[24px] h-[24px] mr-[20px]' src="assets/heart.png" alt="">
         </div>
-        <h1 id='women-child-service-name'class="text-[24px] font-bold mt-[15px]">Women & Child Helpline</h1>
+        <h1 id='women-child-service-name'class="text-[18px] font-bold mt-[15px]">Women & Child Helpline</h1>
         <p class="text-[18px] text-gray-500">Women & Child Helpline</p>
-        <h4 id='women-child-number'class="text-[26px] font-bold mt-[15px]">109</h4>
+        <h4 id='women-child-number'class="text-[18px] font-bold mt-[15px]">109</h4>
         <p class="text-[18px] text-gray-500 bg-gray-200 rounded-full w-[70px] h-[30px] text-center mt-[15px]">Help</p>
         <div class="flex gap-3 mt-[20px]">
-          <button id="copy-btn-WCH" class="copy-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
-             <img class='w-[14px] h-[14px] mt-[8px]'src="copy icon.png" alt="copy icon">
+          <button id="copy-btn-WCH" class="copy-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
+             <img class='w-[14px] h-[14px] mt-[8px]' src="assets/copy icon.png" alt="copy icon">
             <p class="text-[18px] text-gray-500">copy</p>
           </button>
-          <button id="call-btn-women-child" class="call-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700">
-            <img class="w-[14px] h-[16px] mt-[6px]" src="call icon.png" alt="">
+          <button id="call-btn-women-child" class="call-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700 hover:bg-red-700">
+            <img class="w-[14px] h-[16px] mt-[6px]" src="assets/call icon.png" alt="">
             <p class="text-white">Call</p>
           </button>
         </div>
       </div>
-      <div class="anti corruption w-[417px] h-[360px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
+      <div class="anti corruption w-[340px] h-[310px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
         <div class="flex justify-between items-center ">
-          <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
+          <div class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
           <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency logo">
         </div>
-        <img id='heart-picture-6' class='w-[24px] h-[24px] mr-[20px]'src="heart.png" alt="">
+        <img id='heart-picture-6' class='w-[24px] h-[24px] mr-[20px]' src="assets/heart.png" alt="">
         </div>
-        <h1 id='anti-corruption-service-name'class="text-[24px] font-bold mt-[15px]">Anti-Corruption Helpline</h1>
+        <h1 id='anti-corruption-service-name'class="text-[18px] font-bold mt-[15px]">Anti-Corruption Helpline</h1>
         <p class="text-[18px] text-gray-500">Anti-Corruption</p>
-        <h4 id='anti-corruption-number'class="text-[26px] font-bold mt-[15px]">106</h4>
+        <h4 id='anti-corruption-number'class="text-[18px] font-bold mt-[15px]">106</h4>
         <p class="text-[18px] text-gray-500 bg-gray-200 rounded-full w-[70px] h-[30px] text-center mt-[15px]">Govt</p>
         <div class="flex gap-3 mt-[20px]">
-          <button id="copy-btn-ACS"class="copy-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
-             <img class='w-[14px] h-[14px] mt-[8px]'src="copy icon.png" alt="copy icon">
+          <button id="copy-btn-ACS"class="copy-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
+             <img class='w-[14px] h-[14px] mt-[8px]' src="assets/copy icon.png" alt="copy icon">
             <p class="text-[18px] text-gray-500">copy</p>
           </button>
-          <button id='call-btn-anti-corruption'class="call-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700">
-            <img class="w-[14px] h-[16px] mt-[6px]" src="call icon.png" alt="">
+          <button id='call-btn-anti-corruption'class="call-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700 hover:bg-red-700">
+            <img class="w-[14px] h-[16px] mt-[6px]" src="assets/call icon.png" alt="">
             <p class="text-white">Call</p>
           </button>
         </div>
       </div>
-      <div class="Electricity w-[417px] h-[360px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
+      <div class="Electricity w-[340px] h-[310px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
         <div class="flex justify-between items-center ">
-          <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
+          <div class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
           <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency logo">
         </div>
-        <img id='heart-picture-7' class='w-[24px] h-[24px] mr-[20px]'src="heart.png" alt="">
+        <img id='heart-picture-7' class='w-[24px] h-[24px] mr-[20px]' src="assets/heart.png" alt="">
         </div>
-        <h1 id='electricity-service-name' class="text-[24px] font-bold mt-[15px]">Electricity Helpline</h1>
+        <h1 id='electricity-service-name' class="text-[18px] font-bold mt-[15px]">Electricity Helpline</h1>
         <p class="text-[18px] text-gray-500">Electricity Outage</p>
-        <h4 id='electricity-service-number'class="text-[26px] font-bold mt-[15px]">16216</h4>
+        <h4 id='electricity-service-number'class="text-[18px] font-bold mt-[15px]">16216</h4>
         <p class="text-[18px] text-gray-500 bg-gray-200 rounded-full w-[100px] h-[30px] text-center mt-[15px]">Electricity</p>
         <div class="flex gap-3 mt-[20px]">
-          <button id="copy-btn-ES" class="copy-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
-             <img class='w-[14px] h-[14px] mt-[8px]'src="copy icon.png" alt="copy icon">
+          <button id="copy-btn-ES" class="copy-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
+             <img class='w-[14px] h-[14px] mt-[8px]' src="assets/copy icon.png" alt="copy icon">
             <p class="text-[18px] text-gray-500">copy</p>
           </button>
-          <button id='call-btn-electricity'class="call-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700">
-            <img class="w-[14px] h-[16px] mt-[6px]" src="call icon.png" alt="">
+          <button id='call-btn-electricity'class="call-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700 hover:bg-red-700">
+            <img class="w-[14px] h-[16px] mt-[6px]" src="assets/call icon.png" alt="">
             <p class="text-white">Call</p>
           </button>
         </div>
       </div>
-      <div class="brac helpline w-[417px] h-[360px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
+      <div class="brac helpline w-[340px] h-[310px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
         <div class="flex justify-between items-center ">
-          <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
+          <div class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
           <img class="w-[32px] h-[32px]" src="assets/brac.png" alt="brac logo">
         </div>
-        <img id='heart-picture-8'class='w-[24px] h-[24px] mr-[20px]'src="heart.png" alt="">
+        <img id='heart-picture-8'class='w-[24px] h-[24px] mr-[20px]' src="assets/heart.png" alt="">
         </div>
-        <h1 id='brac-service-name'class="text-[24px] font-bold mt-[15px]">Brac Helpline</h1>
+        <h1 id='brac-service-name'class="text-[18px] font-bold mt-[15px]">Brac Helpline</h1>
         <p class="text-[18px] text-gray-500">Brac</p>
-        <h4 id='brac-service-number'class="text-[26px] font-bold mt-[15px]">16445</h4>
+        <h4 id='brac-service-number'class="text-[18px] font-bold mt-[15px]">16445</h4>
         <p class="text-[18px] text-gray-500 bg-gray-200 rounded-full w-[70px] h-[30px] text-center mt-[15px]">NGO</p>
         <div class="flex gap-3 mt-[20px]">
-          <button id="copy-btn-BS" class="copy-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
-             <img class='w-[14px] h-[14px] mt-[8px]'src="copy icon.png" alt="copy icon">
+          <button id="copy-btn-BS" class="copy-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
+             <img class='w-[14px] h-[14px] mt-[8px]' src="assets/copy icon.png" alt="copy icon">
             <p class="text-[18px] text-gray-500">copy</p>
           </button>
-          <button id='call-btn-brac'class="call-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700">
-            <img class="w-[14px] h-[16px] mt-[6px]" src="call icon.png" alt="">
+          <button id='call-btn-brac'class="call-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700 hover:bg-red-700">
+            <img class="w-[14px] h-[16px] mt-[6px]" src="assets/call icon.png" alt="">
             <p class="text-white">Call</p>
           </button>
         </div>
       </div>
-      <div class="railway w-[417px] h-[360px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
+      <div class="railway w-[340px] h-[310px] bg-[#FFFFFF] rounded-[12px] shadow-lg p-5 mt-[20px] ">
         <div class="flex justify-between items-center ">
-          <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
+          <div class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-[10px] flex justify-center items-center mt-[10px]">
           <img class="w-[32px] h-[32px]" src="assets/Bangladesh-Railway.png" alt="railway logo">
         </div>
-        <img id='heart-picture-9'class='w-[24px] h-[24px] mr-[20px]'src="heart.png" alt="">
+        <img id='heart-picture-9'class='w-[24px] h-[24px] mr-[20px]' src="assets/heart.png" alt="">
         </div>
-        <h1 id='railway-service-name'class="text-[24px] font-bold mt-[15px]">Bangladesh Railway Helpline</h1>
+        <h1 id='railway-service-name'class="text-[18px] font-bold mt-[15px]">Bangladesh Railway Helpline</h1>
         <p class="text-[18px] text-gray-500">Bangladesh Railway</p>
-        <h4 id="railway-service-number" class="text-[26px] font-bold mt-[15px]">163</h4>
+        <h4 id="railway-service-number" class="text-[18px] font-bold mt-[15px]">163</h4>
         <p class="text-[18px] text-gray-500 bg-gray-200 rounded-full w-[80px] h-[30px] text-center mt-[15px]">Travel</p>
         <div class="flex gap-3 mt-[20px]">
-          <button id="copy-btn-BR" class="copy-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
-             <img class='w-[14px] h-[14px] mt-[8px]'src="copy icon.png" alt="copy icon">
+          <button id="copy-btn-BR" class="copy-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 hover:bg-pink-200">
+             <img class='w-[14px] h-[14px] mt-[8px]' src="assets/copy icon.png" alt="copy icon">
             <p class="text-[18px] text-gray-500">copy</p>
           </button>
-          <button id='call-btn-railway'class="call-btn w-[182px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700">
-            <img class="w-[14px] h-[16px] mt-[6px]" src="call icon.png" alt="">
+          <button id='call-btn-railway'class="call-btn w-[130px] h-[40px] flex justify-center gap-3 border-2 border-gray-200 rounded-[10px] p-1 bg-green-700 hover:bg-red-700">
+            <img class="w-[14px] h-[16px] mt-[6px]" src="assets/call icon.png" alt="">
             <p class="text-white">Call</p>
           </button>
         </div>
       </div>
      </div>
-  
+
+       <!-- right side cart  -->
+     <div id='history-container'class="md:w-[400px] w-[400px] bg-white shadow-lg rounded-[10px] mt-[20px] mb-4">
+<div class="flex justify-between items-center p-3">
+  <div class="flex items-center gap-2 ">
+    <i class="fa-regular fa-clock mt-[5px]"></i>
+    <h4 class="font-semibold text-[18px]">Call History</h4>
+  </div>
+  <button id='clear-btn'class="w-[114px] h-[40px] bg-[#00A63E] rounded-[20px] text-white text-[18px] hover:bg-red-700 ">
+    clear
+  </button>
+</div>
+
+     </div>
+   </section>
+   
+
+
+             <script src="assignment.js"></script>
 </body>
 </html>
